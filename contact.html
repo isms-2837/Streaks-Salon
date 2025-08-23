@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — Streaks Salon</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Streaks Salon">
+      <img src="assets/img/logo.svg" alt="Streaks Salon logo" width="160" height="38"/>
+    </a>
+    <nav>
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="services.html">Services</a>
+      <a class="link" href="pricing.html">Pricing</a>
+      <a class="link" href="booking.html">Book</a>
+      <a class="link" href="team.html">Team</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn primary" href="booking.html">Book Now</a>
+  </div>
+</header>
+<section class="section container">
+  <h2>Contact & Location</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>Visit us</h3>
+      <p>Jumeirah, Dubai (placeholder)</p>
+      <p><strong>Hours:</strong> Daily 10:00–20:00</p>
+      <p><strong>Phone:</strong> +971 55 555 5555</p>
+      <p><strong>Email:</strong> hello@streakssalon.com</p>
+      <div style="height: 280px; border-radius: 14px; border:1px solid #eee; display:grid; place-items:center;">Map placeholder</div>
+    </div>
+    <form class="card" id="contact-form">
+      <h3>Send a message</h3>
+      <label for="cname">Name</label><input id="cname" required/>
+      <label for="cemail">Email</label><input id="cemail" type="email" required/>
+      <label for="cmsg">Message</label><textarea id="cmsg" rows="5" required></textarea>
+      <div style="margin-top:12px; display:flex; gap:10px;">
+        <button class="btn primary" type="submit">Send</button>
+        <span id="cstatus" class="badge"></span>
+      </div>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>© 2025 Streaks Salon • All rights reserved</div>
+      <div>
+        <span class="badge">Dubai</span>
+        <span class="badge">Open 10:00–20:00</span>
+        <span class="badge">+971 55 555 5555</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

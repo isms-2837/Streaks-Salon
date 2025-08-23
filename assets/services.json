@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cut_style",
+    "name": "Haircut & Style",
+    "duration_min": 45,
+    "price": 120,
+    "category": "Hair"
+  },
+  {
+    "id": "balayage",
+    "name": "Balayage",
+    "duration_min": 150,
+    "price": 350,
+    "category": "Color"
+  },
+  {
+    "id": "keratin",
+    "name": "Keratin Treatment",
+    "duration_min": 120,
+    "price": 450,
+    "category": "Treatment"
+  },
+  {
+    "id": "mens_cut",
+    "name": "Men's Cut",
+    "duration_min": 30,
+    "price": 90,
+    "category": "Hair"
+  },
+  {
+    "id": "blowdry",
+    "name": "Blow-dry",
+    "duration_min": 35,
+    "price": 80,
+    "category": "Style"
+  },
+  {
+    "id": "roots",
+    "name": "Root Color",
+    "duration_min": 90,
+    "price": 220,
+    "category": "Color"
+  }
+]

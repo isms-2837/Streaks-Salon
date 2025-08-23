@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Book Appointment — Streaks Salon</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Streaks Salon">
+      <img src="assets/img/logo.svg" alt="Streaks Salon logo" width="160" height="38"/>
+    </a>
+    <nav>
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="services.html">Services</a>
+      <a class="link" href="pricing.html">Pricing</a>
+      <a class="link" href="booking.html">Book</a>
+      <a class="link" href="team.html">Team</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn primary" href="booking.html">Book Now</a>
+  </div>
+</header>
+<section class="section container">
+  <h2>Book an Appointment</h2>
+  <p class="lead">Select your service, stylist, and preferred time. We’ll confirm by email.</p>
+  <form id="booking-form" class="card" novalidate>
+    <div class="form-row">
+      <div>
+        <label for="service">Service</label>
+        <select id="service" required></select>
+      </div>
+      <div>
+        <label for="stylist">Stylist</label>
+        <select id="stylist" required>
+          <option>Any available</option>
+          <option>Alex</option>
+          <option>Maya</option>
+          <option>Ravi</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" required/>
+      </div>
+      <div>
+        <label for="time">Time</label>
+        <select id="time" required></select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your name" required/>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="+971..." required/>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required/>
+      </div>
+      <div>
+        <label for="notes">Notes (optional)</label>
+        <input type="text" id="notes" placeholder="Any special requests"/>
+      </div>
+    </div>
+    <div style="display:flex; gap:12px; align-items:center; margin-top:12px;">
+      <button type="submit" class="btn primary">Request Booking</button>
+      <button type="button" id="download-ics" class="btn">Add to Calendar (.ics)</button>
+      <span id="status" class="badge" aria-live="polite"></span>
+    </div>
+  </form>
+  <p style="margin-top:18px; color:var(--muted);">By booking, you agree to our <a href="#">policy</a>. You will receive an email confirmation.</p>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>© 2025 Streaks Salon • All rights reserved</div>
+      <div>
+        <span class="badge">Dubai</span>
+        <span class="badge">Open 10:00–20:00</span>
+        <span class="badge">+971 55 555 5555</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
